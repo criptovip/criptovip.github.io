@@ -41,17 +41,3 @@ function updateSubmit() {
 		submit.disabled=true;
 	}
 }
-
-// when clicking on cancel button it will go through all div and clean it. clean all inputs. also the submit button
-document.querySelector(".form-cancel").addEventListener("click", function() {
-	for(i=0 ; i<inputs.length ; i++){
-		inputs[i].value = "";
-	}
-
-
-	for(i=0 ; i<divs.length ; i++){
-		divs[i].classList.remove("form-div-valid", "form-div-invalid");
-	}
-
-	submit.classList.remove("form-submit-valid");
-})

@@ -87,6 +87,7 @@ footer {
 	left: 0;
 	width: 100%;
 	text-align: center;
+	font-size: 0.7em;
 }
 
 /* -------------------------------------------------------------------------------- footer */
@@ -165,4 +166,35 @@ footer {
 .form-div-invalid .form-input {
 	border: 2px solid rgba(256,0,0,0.6);
 	box-shadow: 1px 1px 5px rgba(256,0,0,0.3);	
+}
+
+
+/* -------------------------------------------------------------------------------- responsive */
+
+@media (max-width: 812px) {
+	.header-logo {
+		padding: 3em 5%;
+		margin: 0;
+	}
+
+	footer {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+}
+
+@media (max-width: 375px) {
+	.header-logo {
+		padding: 3em 5%;
+		margin: 0;
+	}
+
+	.footer-logo {
+		width: 100%;
+		margin: 0 0 3em;
+	}
+
+	.footer-form {
+		width: 100%;
+	}
 }
