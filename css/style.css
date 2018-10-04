@@ -1,0 +1,168 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Vollkorn', serif;
+}
+
+/* -------------------------------------------------------------------------------- header */
+header {
+	background: #F4F6F5;
+}
+
+.header-logo {
+	padding: 5em 10%;
+	margin: 0;
+}
+
+.header-img {
+	width: 100%;
+}
+
+/* -------------------------------------------------------------------------------- services */
+.services {
+	background: #444747;
+	color: #FFFFFF;
+	padding: 5em 10%;
+}
+
+.services-title {
+	font-size: 2em;
+}
+
+.services-text {
+	font-size: 1.2em;
+	margin: 0 0 1em;
+}
+
+/* -------------------------------------------------------------------------------- how */
+.how {
+	background: #F4F6F5;
+	color: #444747;
+	padding: 5em 10%;
+}
+
+.how-title {
+	font-size: 2em;
+}
+
+.how-list {
+
+}
+
+.how-item {
+
+}
+
+/* -------------------------------------------------------------------------------- footer */
+footer {
+	background: #232525;
+	color: #FFFFFF;
+	padding: 5em 20% 8em;
+	position: relative;
+}
+
+.footer-logo {
+	display: inline-block;
+	width: 40%;
+	margin: 0 19% 0 0;
+	vertical-align: top;
+}
+
+.footer-img {
+	width: 100%;
+}
+
+.footer-form {
+	display: inline-block;
+	width: 40%;
+}
+
+.footer-copyright {
+	position: absolute;
+	bottom: 0.5em;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+/* -------------------------------------------------------------------------------- footer */
+.form-div {
+	padding: 0.7em 0;
+}
+
+.form-label {
+	display: block;
+	margin: 0 0 0.3em;
+}
+
+.form-input {
+	padding: 1em 2em 1em 1em;
+	width: 100%;
+	font-size: 0.6em;
+	border-radius: 4px;
+	border: 2px solid #ccc;
+	box-shadow: 1px 1px 5px #BBBBBB;
+	transition: 400ms;
+	font-family: 'Vollkorn', serif;
+	font-size: 0.8em;
+}
+
+.form-input:focus {
+	outline: 0;
+	border: 2px solid #4B7D97;
+	box-shadow: 1px 1px 5px #4B7D97;
+}
+
+.form-submit {
+	color: white;
+	padding: 0.6em 1.2em;
+	border-radius: 4px;
+	font-size: 1em;
+	font-family: 'Vollkorn', serif;
+	font-weight: 700;
+	background: #ccc;
+	outline: 0;
+	transition: 400ms;
+	float: right;
+}
+
+.form-submit-valid {
+	background: #6198C6;
+	cursor: pointer;
+	border: none;
+}
+
+/* -------------------------------------------------------------------------------- validation */
+.form-div {
+	position: relative;
+}
+
+.form-div::after {
+	position: absolute;
+	top: 0.6em;
+	right: 0;
+}
+
+.form-div-valid::after {
+	content: "✔";
+	color: green;
+}
+
+.form-div-invalid {
+	background: rgba(256,0,0,0.2);
+	position: relative;
+}
+
+.form-div-invalid::after {
+	content: "✘";
+	color: red;
+}
+
+.form-div-invalid .form-input {
+	border: 2px solid rgba(256,0,0,0.6);
+	box-shadow: 1px 1px 5px rgba(256,0,0,0.3);	
+}
