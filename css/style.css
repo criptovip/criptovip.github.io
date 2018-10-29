@@ -50,11 +50,32 @@ header {
 }
 
 .how-list {
-
+	list-style: none;
+	padding: 0;
 }
 
 .how-item {
+	margin: 0 0 0.5em;
+	position: relative;
+	padding: 18px 0 18px 50px;
+	min-height: 36px;
+}
 
+.how-item span {
+	font-family: serif;
+	font-size: 0.9em;
+	font-weight: bold;
+	background: #444747;
+	color: #FFFFFF;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-18px);
 }
 
 /* -------------------------------------------------------------------------------- footer */
